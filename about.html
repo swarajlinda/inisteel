@@ -24,8 +24,113 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="js/html5shiv.js"></script>
     <![endif]-->
-    
+ 
+    <style>
+        .testimonial-carousel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .testimonial-item {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .author {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .author img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .author h5 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .content {
+            text-align: left;
+            word-wrap: break-word;
+        }
+
+        .content p {
+            margin: 10px 0;
+            word-wrap: break-word;
+        }
+
+        .rating {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .rating li {
+            color: gold;
+        }
+
+        @media (max-width: 767px) {
+            .testimonial-carousel {
+                width: 100%;
+            }
+
+            .testimonial-item {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .author img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .author h5 {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 226px) {
+            .testimonial-item {
+                padding: 5px;
+                font-size: 12px;
+            }
+
+            .author img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .author h5 {
+                font-size: 12px;
+            }
+
+            .content p {
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 <div class="boxed_wrapper">
 <!--Start Preloader -->
@@ -53,7 +158,7 @@
             <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="images/logo/logo.jpeg" alt="Awesome Logo" style="width: 150px; height: 75px;">
+                        <img src="images/logo/logo.jpeg" alt="Awesome Logo" style="width: 250px; height: 175px; ">
                     </a>
                 </div>
             </div>
@@ -428,72 +533,135 @@
         <div class="section-title center">
             <h2>DETAILS OF PROMOTERS</h2>
         </div>
-        <div class="testimonial-carousel">
-            <div class="testimonial-item">
-                <div class="content">
-                    <span class="fa fa-quote-left"></span>
-                   
-                    <p>* Degree in MBA and PGDCA </p>
-                    <p>* JOB EXPERIENCE – Joined in SBI as a Probationary Officer (PO) , <br> later on promoted to Manager . Worked there for 12.5 yrs.
-                    </p>
-                    <p>* WORK LOCATIONS – Chennai , Bangalore , Kolkata and Punjab 
-                    <ul class="rating">
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                    </ul>
-                </div>
-                <div class="author">
-                    <ul class="list-inline">
-                        <li>
-                            <img src="images/team/Praful.jpeg" alt="" style="width: 200px; height: 200px;">
-                        </li>
-                        
-                        <li>
-                          
-                            <h5>Mr. Prafful Kumar Lakra <h5>
-                            
-                           
-                          
+        <div class="row">
+            <article class="col-md-4 col-sm-6 col-xs-12">
+                <div class="testimonial-item">
+                    <div class="content">
+                        <span class="fa fa-quote-left"></span>
+                        <p>MBA and PGDCA</p>
+                        <p> SBI General Manager </p>
+                        <p> WORK LOCATIONS – Chennai , Bangalore , Kolkata and Punjab </p>
 
-                            </p>
-                        </li>
-                    </ul>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                        </ul>
+                    </div>
+                    <div class="author">
+                        <ul class="list-inline">
+                            <li>
+                                <img src="images/team/Praful.jpeg" style="width: 200px; height: 200px;" alt="">
+                            </li>
+                            <li>
+                                <h5>Mr. Prafful Kumar Lakra </h5>
+                                <p> SBI General Manager </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="testimonial-item">
-                <div class="content">
-                    <span class="fa fa-quote-left"></span>
-                    <p> QUALIFICATIONS – Bachelor’s Degree in Commerce and Computer </p>
-                    <p>JOB PROFILE – Works as an auditor in a private company called Sambandh Micro Finance since 5 yrs.</p>
+            </article>
+            <article class="col-md-4 col-sm-6 col-xs-12">
+                <div class="testimonial-item">
+                    <div class="content">
+                        <span class="fa fa-quote-left"></span>
+                        <p>Bachelor’s Degree in Commerce and Computer</p>
+                        <p>auditor in a private company called Sambandh Micro Finance since 5 yrs </p>
 
-                    <ul class="rating">
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                    </ul>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                        </ul>
+                    </div>
+                    <div class="author">
+                        <ul class="list-inline">
+                            <li>
+                                <img src="images/team/Prashant.jpeg" alt=""
+                                    style="width: 200px; height: 200px;">
+                            </li>
+                            <li>
+                                <h5>Pransanta Kumar Lakra </h5>
+                                <p> Auditor</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="author">
-                    <ul class="list-inline">
-                        <li>
-                            <img src="images/team/Prashant.jpeg" alt="" style="width: 200px; height: 200px;">
-                        </li>
-                        <li>
-                            <h5> Pransanta Kumar Lakra 
-                            </h5>
-                            
-                        </li>
-                    </ul>
-                </div>
+            </article>
+            <!-- <article class="col-md-4 col-sm-6 col-xs-12">
+        <div class="testimonial-item">
+            <div class="content">
+                <span class="fa fa-quote-left"></span>
+                <p>Lorem ipsum dolor sit amet ment tionim sea. Ei explicari evertitur uptatum vi core zupitor inciderint reforin alienum</p>
+
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
             </div>
-            
+            <div class="author">
+                <ul class="list-inline">
+                    <li>
+                        <img src="images/team/3.png" alt="">
+                    </li>
+                    <li>
+                        <h5>Mr. Prafful Kumar Lakra</h5>
+                        <p>Los Angeles</p>
+                    </li>
+                </ul>
+            </div>
+        </div>     
+    </article> -->
+        </div>
+
+<!-- <div class="testimonial-carousel">
+    <div class="testimonial-item">
+        <div class="author">
+            <img src="images/team/Praful.jpeg" alt="">
+            <h5>Mr. Prafful Kumar Lakra</h5>
+        </div>
+        <div class="content">
+            <span class="fa fa-quote-left" style="color: #333;"></span>
+            <p>* Degree in MBA and PGDCA</p>
+            <p>* JOB EXPERIENCE – Joined in SBI as a Probationary Officer (PO), <br> later on promoted to Manager. Worked there for 12.5 yrs.</p>
+            <p>* WORK LOCATIONS – Chennai, Bangalore, Kolkata and Punjab</p>
+            <ul class="rating">
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+            </ul>
         </div>
     </div>
+    <div class="testimonial-item">
+        <div class="author">
+            <img src="images/team/Prashant.jpeg" alt="">
+            <h5>Pransanta Kumar Lakra</h5>
+        </div>
+        <div class="content">
+            <span class="fa fa-quote-left" style="color: #333;"></span>
+            <p>QUALIFICATIONS – Bachelor’s Degree in Commerce and Computer</p>
+            <p>JOB PROFILE – Works as an auditor in a private company called Sambandh Micro Finance since 5 yrs.</p>
+            <ul class="rating">
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+                <li class="fa fa-star"></li>
+            </ul>
+        </div>
+    </div>
+</div> -->
 </section>
+
 
 <section class="subscribe center sec-padd" style="background-image: url(images/background/5.jpg);">
     <div class="container">
